@@ -16,6 +16,7 @@ typedef struct {
     int sample_rate;      // Sample rate in Hz
     int num_channels;     // Number of channels
     int export_linear;    // Whether to export linear AEC output
+    float suppression_level; // Echo suppression level (0.0 = minimal, 1.0 = maximum/aggressive)
 } aec3_config_t;
 
 // Create a new AEC3 instance
